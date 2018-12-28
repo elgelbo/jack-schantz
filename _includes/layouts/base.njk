@@ -3,8 +3,9 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
-
+	<body class="bkd">
+		<div class="cover">
+		<div class="main">
 		<header>
 			<em>
 				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
@@ -17,7 +18,8 @@
 		</main>
 
 		{% include "components/footer.njk" %}
-
+		</div>
+</div>
 	</body>
 
 </html>

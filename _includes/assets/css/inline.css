@@ -1,187 +1,53 @@
-:root {
-	--turkey: #FFF0EB;
-	--white: white;
-	--blue: blue;
+body, html {
+  height: 100%;
 }
-
-*, *:before, *:after {
-  box-sizing: border-box;
+.bkd {
+background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2323dba2' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+margin: 0;
 }
-
-html,
-body {
-	padding: 0;
-	margin: 0;
-	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-}
-
-body {
-	display: grid;
-	height: 100vh;
-	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
-}
-
-main {
-	max-width: 37.5em;
-}
-
-p,
-pre,
-code {
-	line-height: 1.5;
-}
-
-a[href],
-a[href]:visited {
-	color: var(--blue);
-}
-
-a[href]:not(:hover) {
-	text-decoration: none;
-}
-
-header,
-main,
-footer {
-	padding: 1em;
-}
-
-main {
-	padding-bottom: 2em;
-}
-
-main :first-child,
-main > article :first-child {
-	margin-top: 0;
-}
-
-pre {
-	font-size: 14px;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	-moz-tab-size: 2;
-	tab-size: 2;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	padding: 1em;
-	margin: .5em 0;
-}
-
-ul {
-	padding: 0;
-	list-style: none;
-}
-
-/* Header Logo (style as h2) */
-header > em {
-	display: block;
-	font-size: 2em;
-	margin: .67em 0;
-	font-weight: bold;
-	font-style: normal;
-}
-
-/* Header Nav */
-header nav ul :first-child {
-	margin-left: 0;
-}
-
-header nav li {
-	display: inline-block;
-	margin: 0 .5em;
-}
-
-header nav li a[href]:not(:hover) {
-	text-decoration: none;
-}
-
-header nav li a[data-current="current item"] {
-	font-weight: 700;
-	text-decoration: underline;
-}
-
-/* Posts List */
-article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--white);
-}
-
-main > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
-}
-
-/* Post Tags */
-a[rel="tag"],
-a[rel="tag"]:visited {
-	display: inline-block;
-  vertical-align: text-top;
-  text-transform: uppercase;
-	letter-spacing: .1em;
-  font-size: .625em;
-  padding: 0 .5em;
-	line-height: 2em;
-	height: 2em;
-  border: 1px solid var(--white);
-	background-color: var(--white);
-	color: var(--blue);
-  border-radius: .25em;
-  text-decoration: none;
-	margin: 0 .5em .5em 0;
-}
-
-a[rel="tag"]:hover {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
-}
-
-a[rel="tag"]:last-child {
-	margin-right: 0;
-}
-
-/* Contact Form */
-form {
-  display: grid;
-	padding: 2em 0;
-}
-
-form label {
-  display: none;
-}
-
-input,
-textarea,
-button {
+.cover {
+  position: relative;
+  background: linear-gradient(
+    -141deg,
+    rgba(15, 184, 173, 0.5) 0%,
+    rgba(31, 200, 219, 0.5) 51%,
+    rgba(44, 181, 232, 0.5) 75%
+  );
+  height: 100vh;
   width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
+  margin: 0 auto;
+  overflow: auto;
 }
 
-input,
-textarea {
-	border: 1px solid black;
+.main {
+  height: 100%;
+  display: grid;
 }
 
-button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
-	cursor: pointer;
+.main span {
+  margin: auto;
+  padding: 1.5em;
 }
 
-@media screen and (min-width:768px) {
-	:root {
-		font-size: 1.1rem;
-	}
+h1 {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 2.25rem;
+}
+
+span p {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1.25rem;
+  color: grey;
+  display: inline;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background: url('static/img/jack.jpg') center center;
+  background-size: contain;
+  -webkit-clip-path: circle(100px at center);
+  clip-path: circle(100px at center);
+  margin: auto;
 }
