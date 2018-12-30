@@ -1,51 +1,99 @@
-body, html {
+body,
+html {
   height: 100%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
+
 .bkd {
-background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2323dba2' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-margin: 0;
+  /*   background-color: #fff; */
+  /*   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2323dba2' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  margin: 0;
 }
+
 .cover {
   position: relative;
-  background: linear-gradient(
+  /*   background: linear-gradient(
     -141deg,
-    rgba(15, 184, 173, 0.5) 0%,
+    rgba(15, 184, 173, 0.5) 0,
     rgba(31, 200, 219, 0.5) 51%,
     rgba(44, 181, 232, 0.5) 75%
-  );
+  ); */
+  background: #f8f9fa;
   height: 100vh;
   width: 100%;
   margin: 0 auto;
   overflow: auto;
 }
 
-.main {
-  height: 100%;
-  display: grid;
+.navbar-brand {
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 900;
 }
 
-.main span {
-  margin: auto;
-  padding: 1.5em;
+.navbar {
+  background-color: #f8f9fa;
+  /*   border-bottom: solid 1.5px rgb(0,0,0); */
+  box-shadow: 0px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+main h1 {
+  color: black;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 3.5em;
+  padding: 0.5em 0;
+}
+
+.navbar-nav li {
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 900;
+}
+.navbar-nav > li:hover {
+  background-color: #ff0;
+  text-decoration: none;
+}
+
+#mymenu {
+  border: 0px;
+}
+
+#mymenu .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+main {
+  margin: 1em 3em 0 3em;
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif; 
   font-size: 2.25rem;
 }
 
 span p {
-  font-family: 'Open Sans', sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   color: grey;
   display: inline;
 }
 
+.nav-circle {
+  width: 100px;
+  height: 100px;
+  background: url(../static/img/jack.jpg) center center;
+  background-size: contain;
+  -webkit-clip-path: circle(50px at center);
+  clip-path: circle(50px at center);
+  margin: auto;
+}
+
 .circle {
   width: 200px;
   height: 200px;
-  background: url('static/img/jack.jpg') center center;
+  background: url(../static/img/jack.jpg) center center;
   background-size: contain;
   -webkit-clip-path: circle(100px at center);
   clip-path: circle(100px at center);
